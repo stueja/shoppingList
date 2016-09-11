@@ -1,0 +1,9 @@
+[27-Dec-2015 22:46:42 CST6CDT] PHP Fatal error:  Call to a member function fetch_array() on boolean in /home/ytercero/public_html/CDA/shoppingList/register2.php on line 83
+[27-Dec-2015 22:50:40 CST6CDT] PHP Fatal error:  Call to a member function fetch_array() on boolean in /home/ytercero/public_html/CDA/shoppingList/login2.php on line 12
+[27-Dec-2015 23:23:00 CST6CDT] PHP Parse error:  syntax error, unexpected '}' in /home/ytercero/public_html/CDA/shoppingList/login2.php on line 29
+[27-Dec-2015 23:23:15 CST6CDT] PHP Parse error:  syntax error, unexpected '}' in /home/ytercero/public_html/CDA/shoppingList/login2.php on line 29
+[27-Dec-2015 23:23:18 CST6CDT] PHP Parse error:  syntax error, unexpected '}' in /home/ytercero/public_html/CDA/shoppingList/login2.php on line 29
+[27-Dec-2015 23:23:24 CST6CDT] PHP Parse error:  syntax error, unexpected '}' in /home/ytercero/public_html/CDA/shoppingList/login2.php on line 29
+[28-Dec-2015 16:58:39 CST6CDT] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in /home/ytercero/public_html/CDA/shoppingList/error.php on line 15
+[28-Dec-2015 16:58:51 CST6CDT] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in /home/ytercero/public_html/CDA/shoppingList/error.php on line 15
+[30-Dec-2015 17:21:19 CST6CDT] PHP Fatal error:  Call to a member function query() on null in /home/ytercero/public_html/CDA/shoppingList/title2.php on line 10

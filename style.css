@@ -1,0 +1,735 @@
+/*NORMALIZER*/
+*{
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+
+a{
+	text-decoration: none;
+	color: black;
+}
+
+ol, ul{
+	list-style: none;
+}
+
+header, footer, main, nav{
+	display: block;
+}
+
+html {
+    height: 100%;
+}
+
+/*RESET*/
+body{
+	font-size: 18px;
+	font-family: 'Lato', sans-serif;
+	color: #444;
+	height: 100%;
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6{
+	font-family: 'Raleway', serif;
+	font-weight: 300;
+    text-transform: uppercase;
+}
+
+h1{
+	text-align: center;
+	font-size: 5vw;
+	padding-top: 20px;
+}
+
+h2 {
+    text-align: center;
+    margin: 0 0 30px;
+    font-size: 2vw;
+}
+
+h3{
+    padding: 10px 0;
+}
+
+h6{
+	font-size: 18px;
+}
+
+.clear:after{
+	height: 0;
+	content: " ";
+	clear: both;
+	display: block;
+}
+
+#container{
+	min-height: 500px;
+}
+
+
+/*LOGIN & REGISTER*/
+.home {
+    background: url(images/noisy_net.png); 
+}
+
+.banner{
+	background-image: url("images/restaurant_icons.png");
+    border-radius: 12px;
+    margin: 5% auto;
+    padding: 0 20px 40px;
+    width: 45%;
+}
+
+.wrapper{
+	width: 75%;
+	margin: 0 auto;
+	background-color: none;
+}
+
+.home input[type="text"], .home input[type="password"]{
+	margin-bottom: 30px;
+	display: block;
+    width: 100%;
+}
+
+input[type='text'], input[type="password"]{
+	background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 1px 0 0 #ccc;
+    box-sizing: border-box;
+    font-size: 16px;
+    padding: 10px;
+}
+
+input[type="text"]:focus{
+	box-shadow: 0 4px 0 0 #f6ffcc;
+}
+
+#registerForm input[name="first"], #registerForm input[name="last"]{
+	width: 48%;
+	display: inline;
+	margin-bottom: 0;
+}
+
+.home input[type="submit"], .menuPop input[type="submit"], #add input[type="submit"], .editForm input[type="submit"]{
+	display: block;
+	width: 100%;
+	background-color: #444;
+	color: white;
+	font-size: 18px;
+	padding: 10px;
+}
+
+.forgotLinks{
+	margin: 15px auto 40px;
+}
+
+.forgotLinks a{
+	display: block;
+	color: #a3a3a3;
+	float: left;
+	width: 50%;
+	font-size: 14px;
+}
+
+.forgotLinks a:last-of-type{
+	text-align: right;
+}
+
+	.forgotLinks a:hover{
+		color: #444;
+	}
+
+.switch_links{
+	display: block;
+	text-align: center;
+	padding: 5px;
+	text-decoration: underline;
+}
+
+#registerForm li{
+	margin-bottom: 30px;
+}
+
+/*MENU*/
+.menus{
+	left: 13px;
+	position: absolute;
+	top: 25px;
+}
+
+.menuPop{
+	float: left;
+	width: 20%;
+	background-image: url(images/noisy_net.png);
+	color: white;
+	padding: 90px 0;
+	position: relative;
+	position: absolute;
+	top: 0;
+	left: -100%;
+	z-index: 9999;
+}
+
+.menuPop h4{
+    margin-left: 37px;
+}
+
+.listoflists{
+	margin: 15px 0 30px 0;
+}
+
+.listoflists li{
+	border-bottom: 1px solid white;
+	width: 75%;
+	margin: 0 auto;
+}
+
+.listoflists li a{
+	color: white;
+	display: block;
+	padding: 10px 5px 10px 10px;
+	float: left;
+}
+
+.listoflists li a:last-of-type{
+	float: right;
+}
+
+.user_pic{
+	position: absolute;
+	right: 15px;
+	top: 15px;
+	border-radius: 1000%;
+	border: 1px solid white;
+	width: 40px;
+	height: 40px;
+}
+
+.logout{
+	color: white;
+	position: absolute;
+	right: 10px;
+	bottom: 10px;
+}
+
+/*SEARCH*/
+.search{
+	float: right;
+	width: 50%;
+	text-align: right;
+	position: relative;
+}
+
+.search form{
+	display: inline;
+}
+
+
+/*ADD ITEM/SORT BY*/
+#add{
+	display: none;
+}
+
+#add input[type='text']{
+	width: 32%;
+	margin: 5px 0;
+}
+
+#add input[name='description']{
+	width: 85%;
+}
+
+input[value="Add Item"], input[value="Go!"], button{
+	border-radius: 1000%;
+	vertical-align: middle;
+	font-size: 14px;
+	background: none;
+}
+
+input[value="Add Item"]{
+	border-radius: 5px;
+	width: 90px;
+}
+
+.add_item{
+}
+
+.sort_items{
+	float: left;
+}
+
+.item_form{
+	display: none;
+}
+
+.sort_form{
+	float: right;
+}
+
+.selectParent{
+	overflow: hidden;
+}
+
+	.selectParent select{
+		 -moz-appearance: none;
+	    -moz-border-bottom-colors: none;
+	    -moz-border-left-colors: none;
+	    -moz-border-right-colors: none;
+	    -moz-border-top-colors: none;
+	    background: transparent url("images/dropDownArrow.png") no-repeat scroll 152px center;
+	    border-bottom: 1px solid #eeeeee;
+	    border-image: none;
+	    border-left: 1px solid #eeeeee;
+	    border-radius: 10px;
+	    border-top: 1px solid #eeeeee;
+	    font-family: "Open Sans",sans-serif;
+	    font-size: 14px;
+	    padding: 5px 6px;
+	    width: 200px;
+	}
+
+
+/*LIST*/
+
+.list{
+	background-image: url(images/restaurant_icons.png);
+	background-size: 30%;
+}
+
+.mainList{
+	background-color: #fefefe;
+	box-shadow: 2px 7px 4px 3px #ccc;
+    margin: 80px auto;
+    min-height: 200px;
+    padding: 60px 0;
+    position: relative;
+    width: 70%;
+}
+
+.mainList .wrapper > ul > li{
+	border-bottom: 1px solid #ccc;
+	padding: 10px 0;
+}
+
+.mainItemList{
+	padding: 20px 0;
+}
+
+.list h2 span a{
+	font-size: 12px;
+	font-family: 'Lato', sans-serif;
+}
+
+#titleEditDiv{
+	display: none;
+	margin: 0 auto 30px;
+    width: 270px;
+}
+
+.titlePencil{
+	font-size: 2vw;
+}
+
+.titleEdit .fa-times{
+	color: red;
+	vertical-align: middle;
+}
+
+.atagDrop{
+	position: relative;
+}
+
+.atags{
+	float: right;
+	padding: 0 4px;
+	width: 14%;
+}
+
+	.atags a{
+		margin: 0 5px;
+	}
+
+
+
+.mainList .wrapper ul li .lighttext{
+	color: #ccc;
+	font-size: 16px;
+}
+
+.text{
+	float: left;
+	width: 82%;
+}
+
+.complete, .notComplete{
+	text-decoration: line-through;
+	font-size: 14px;
+	color: #888888;
+}
+
+.notComplete{
+	text-decoration: none;
+}
+
+.highlight, .nohighlight{
+	background: url(images/highlight.png);
+	background-size: 100%;
+	font-size: 18px;
+	color: #444;
+}
+
+.nohighlight{
+	background-image: none;
+}
+
+.fa-star, .fa-star-o{
+	color: #f2be20;
+}
+
+.fa-trash-o{
+	color: #bf1f1f;
+}
+
+.fa-check{
+	color: #526da9;
+}
+
+#angleDown{
+	display: none;
+}
+
+
+/*EDIT ITEM*/
+
+.editToggle{
+	display: none;
+}
+
+.editForm label{
+	display: block;
+	margin-bottom: 5px;
+}
+
+.editForm ul li{
+	margin: 15px 0;
+}
+
+.editForm input[type="text"]{
+    width: 100%;
+}
+
+/*NEW LIST*/
+.list_form{
+	display: none;
+}
+
+#newList {
+	width: 90%;
+	margin: 5px auto;
+}
+
+#newList input[type="text"], .menuPop input[type="submit"], .user_info input[type="text"], .user_info input[type="submit"], #userInfoForm input[type="file"]{
+	display: block;
+	width: 80%;
+	padding: 5px;
+	margin: 12px auto 15px;
+}
+ #newList input[type="submit"]{
+ 	width: 80%;
+ }
+
+ /*USER INFO*/
+.user_info{
+	display: none;
+}
+
+.user_info ul li{
+	margin: 15px 0;
+}
+
+.user_info label{
+	padding-left: 10%;
+	margin-bottom: 5px;
+	display: block;
+}
+
+#userInfoForm input[type="file"]{
+	margin: 10px auto 0;
+}
+
+
+/*POPUPS*/
+
+.popUps{
+	background-color: white;
+    border: 1px solid red;
+    border-radius: 10px;
+    left: 40%;
+    position: absolute;
+    text-align: center;
+    top: 30%;
+    width: 300px;
+    z-index: 1000;
+    padding: 20px 0 10px;
+}
+
+.ok{
+	background-color: black;
+    color: white;
+    height: 27px;
+    margin: 10px auto;
+    padding-right: 0;
+    padding-top: 4px;
+    text-align: center;
+    width: 60px;
+}
+
+/*FOOTER*/
+footer ul{
+	padding-bottom: 10px;
+	width: 80%;
+	margin: 0 auto;
+	display: block;
+}
+
+footer ul li{
+	color: white;
+	font-size: 14px;
+	padding: 5px;
+	text-align: center;
+}
+
+.list footer ul li{
+	color: #444;
+}
+
+@media screen and (max-width: 1370px) {
+.text {
+    width: 75%;
+}
+
+.atags {
+    text-align: right;
+    width: 20%;
+}
+}
+
+@media screen and (max-width: 1200px) {
+
+.banner {
+    width: 58%;
+}
+
+
+
+h1 {
+    font-size: 6vw;
+}
+
+h2 {
+    font-size: 2.5vw;
+}
+
+.mainList {
+    margin: 70px auto;
+    padding: 50px 0;
+    width: 85%;
+}
+}
+
+@media screen and (max-width: 900px) {
+
+.banner {
+    width: 70%;
+}
+
+h1 {
+    font-size: 8vw;
+}
+
+h2 {
+    font-size: 3.3vw;
+}
+
+.mainList {
+    width: 90%;
+}
+
+.list .wrapper {
+    width: 85%;
+}
+
+}
+
+
+@media screen and (max-width: 746px) {
+
+.banner {
+    width: 80%;
+}
+
+h1 {
+    font-size: 9vw;
+}
+
+h2 {
+    font-size: 3.5vw;
+}
+
+#angleDown{
+	display: block;
+	float: right;
+	text-align: right;
+	width: 10%;
+}
+
+.atags{
+	display: none;
+	background-color: rgba(255, 255, 255, 0.8);
+    float: none;
+    padding: 0 4px;
+    position: absolute;
+    right: 50px;
+    top: 0;
+    text-align: right;
+    width: 20%;
+}
+
+.text {
+    width: 90%;
+}
+
+}
+
+@media screen and (max-width: 690px) {
+.list {
+    background-size: 80% auto;
+}
+
+.selectParent select {
+    background: transparent url("images/dropDownArrow.png") no-repeat scroll 80px center;
+    width: 120px;
+}
+
+input[type="text"], input[type="password"] {
+    padding: 6px;
+    width: 60%;
+}
+
+.atags{
+    width: 30%;
+}
+}
+
+@media screen and (max-width: 530px) {
+
+.forgotLinks a {
+    font-size: 14px;
+    margin: 0 0 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 14vw;
+}
+
+h2 {
+    font-size: 5.5vw;
+}
+
+.forgotLinks a:last-of-type {
+    text-align: center;
+}
+
+.forgotLinks {
+    width: 100%;
+}
+
+.wrapper {
+    width: 90%;
+}
+
+#registerForm input[name="first"], #registerForm input[name="last"] {
+    display: block;
+    width: 100%;
+}
+
+#registerForm input[name="first"]{
+	margin-bottom: 30px;
+}
+
+.mainList {
+    width: 95%;
+}
+
+.sort_search {
+    margin: 0 auto;
+    width: 288px;
+}
+
+.sort_items {
+    float: none;
+    margin: 0 auto;
+}
+
+.selectParent select {
+    background: transparent url("images/dropDownArrow.png") no-repeat scroll 195px center;
+    width: 250px;
+    margin: 0 0 10px;
+}
+
+input[type="text"], input[type="password"] {
+    width: 250px;
+}
+
+.search{
+	float: none;
+	width: 100%;
+	text-align: left;
+}
+
+.add_item h3{
+	text-align: center;
+}
+
+#add input[type="text"], #add input[name="description"] {
+    width: 250px;
+    display: block;
+    margin: 5px auto;
+}
+
+input[value="Add Item"] {
+    border-radius: 5px;
+    display: block;
+    margin: 0 auto;
+    width: 63%;
+}
+
+.sort_form{
+	float: none;
+}
+
+.atags{
+    width: 35%;
+}
+
+}
+
+@media screen and (max-width: 440px) {
+input[type="text"], input[type="password"] {
+    width: 80%;
+}
+
+.selectParent select {
+    background: transparent url("images/dropDownArrow.png") no-repeat scroll 188px center;
+    width: 230px;
+}
+
+.atags{
+    width: 40%;
+}
+}
