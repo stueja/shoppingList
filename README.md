@@ -1,4 +1,4 @@
-# Listatic
+# Listastic
 Shopping List App made using JS, PHP, MySQL
 
 Feel free to check it out here - http://yadayadacreative.com/projects/shoppingList/index.php?page=sign_up
